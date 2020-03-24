@@ -8,4 +8,9 @@ title = "Alexa"
 type = "post"
 
 +++
+* Alexa as Remote
+* Controlling Alexa voice output
+* HACS
+* Spotify
+
 I use Amazon Alexa to control almost all my smart home functionality. To allow Alexa to talk to my smart home I use the node-red plugin to simulate a Philips hue bridge (which is the only smart home device Alexa can talk to via the local network)
