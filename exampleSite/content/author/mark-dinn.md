@@ -1,7 +1,7 @@
 +++
-title = "Mark Dinn"
-image = "/images/author/mark-dinn.jpg"
-description = "This is meta description"
-+++
+description = "Engineer, Software Developer, CTO"
+image = "/images/Martin_hell.jpg"
+title = "Martin Weber"
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
++++
+I am a computer scientist with an interest in machine learning and data science. Currently, I am working at Catalysts doing Data Science Projects in Industry and Retail. Another part of my daily work is developing digital agendas for all sorts of industries. Besides that, I am in the final steps of my master's in Computer Science. Through my mostly academic but also corporate work I identified my passion and abilities in leadership.
