@@ -12,4 +12,43 @@ Ich verwende einen Shelly 2.5 um meine Jalousien welche über einen propritären
 
 ![Shelly 2.5](https://shelly.cloud/wp-content/uploads/2019/01/shelly-25.png "Shelly 2.5 (source: shelly.cloud)")
 
-Ist der Shelly 2.5 erst mal verkabelt ist das nach oben und nach unten fahren schnell über die Shelly App oder den im Shelly integrierten Webserver auszuprobieren. Auch die erste Anbindung an Home Assistant über MQTT ist schnell erledigt und unterscheidet sich nicht von der Einbindung eines Shellys als Smarten Lichtschalter (siehe mein erster Shelly Blogpost). Um die Jalousien nun aber auch als solche in Home Assistant abzubilden müssen wir nun noch. 
+Ist der Shelly 2.5 erst mal verkabelt ist das nach oben und nach unten fahren schnell über die Shelly App oder den im Shelly integrierten Webserver auszuprobieren. Auch die erste Anbindung an Home Assistant über MQTT ist schnell erledigt und unterscheidet sich nicht von der Einbindung eines Shellys als Smarten Lichtschalter (siehe mein erster Shelly Blogpost). Um die Jalousien nun aber auch als solche in Home Assistant abzubilden müssen wir noch ein paar Dinge konfigurieren. 
+
+Zuerst erstellen wir unsere Jalousien Objekt. Wir nutzen hier keine Home Assistant Logik oder Funktionalität sondern lediglich das User Interface. Ziel ist es das Öffnen, Schließen und Kippen zu ermöglichen. Wir verwenden stop für die Kipp Funktion. open und close blieben bei ihrer ursprünglichen Funktionalität.
+
+    cover:
+      - platform: template
+        covers:
+          shades:
+            device_class: blind
+            friendly_name: "Shades"
+            position_template: 50
+            icon_template: mdi:window-shutter
+            open_cover:
+              service: input_boolean.turn_on
+              data:
+                entity_id: input_boolean.open_shades
+            stop_cover:
+              service: input_boolean.turn_on
+              data:
+                entity_id: input_boolean.tilt_shades
+            close_cover:
+              service: input_boolean.turn_on
+              data:
+                entity_id: input_boolean.close_shades
+
+ Um den Status der User Interface Tasten im System verfügbar zu haben schreiben wir diesen in die 3 input_boolean variablen welche wir im nächsten Konfigurationsblock nun definieren:
+
+    input_boolean:
+      close_shades:
+        name: "Close Shades"
+        initial: off
+        icon: mdi:window-shutter
+      open_shades:
+        name: "Open Shades"
+        initial: off
+        icon: mdi:window-shutter-open
+      tilt_shades:
+        name: "Tilt Shades"
+        initial: off
+        icon: mdi:window-shutter-alert
