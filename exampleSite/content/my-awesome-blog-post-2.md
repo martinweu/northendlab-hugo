@@ -14,6 +14,26 @@ Ich verwende einen Shelly 2.5 um meine Jalousien welche über einen propritären
 
 Ist der Shelly 2.5 erst mal verkabelt ist das nach oben und nach unten fahren schnell über die Shelly App oder den im Shelly integrierten Webserver auszuprobieren. Auch die erste Anbindung an Home Assistant über MQTT ist schnell erledigt und unterscheidet sich nicht von der Einbindung eines Shellys als Smarten Lichtschalter (siehe mein erster Shelly Blogpost). Um die Jalousien nun aber auch als solche in Home Assistant abzubilden müssen wir noch ein paar Dinge konfigurieren. 
 
+    light:
+      - platform: mqtt
+        name: shadesdown
+        state_topic: "shellies/shellyswitch25-68F9FD/relay/0"
+        command_topic: "shellies/shellyswitch25-68F9FD/relay/0/command"
+        qos: 2
+        payload_on: "on"
+        payload_off: "off"
+        retain: false
+        optimistic: false
+      - platform: mqtt
+        name: shadesup
+        state_topic: "shellies/shellyswitch25-68F9FD/relay/1"
+        command_topic: "shellies/shellyswitch25-68F9FD/relay/1/command"
+        qos: 2
+        payload_on: "on"
+        payload_off: "off"
+        retain: false
+        optimistic: false
+
 Zuerst erstellen wir unsere Jalousien Objekt. Wir nutzen hier keine Home Assistant Logik oder Funktionalität sondern lediglich das User Interface. Ziel ist es das Öffnen, Schließen und Kippen zu ermöglichen. Wir verwenden stop für die Kipp Funktion. open und close blieben bei ihrer ursprünglichen Funktionalität.
 
     cover:
@@ -53,4 +73,10 @@ Zuerst erstellen wir unsere Jalousien Objekt. Wir nutzen hier keine Home Assista
         initial: off
         icon: mdi:window-shutter-alert
 
-Somit haben wir die Konfiguration in Home Assistant selbst abgeschlossen. Die logik zur Steuerung der Jalousien selbst bild ich in NodeRed ab.
+Somit haben wir die Konfiguration in Home Assistant selbst abgeschlossen. Die Logik zur Steuerung der Jalousien selbst bilde ich in NodeRed ab.
+
+In NodeRed können wir an die drei input_booleans trigger hängen welche dann die Prozesskette anstoßen. Das Öffnen und Schließen ist hierbei denkbar einfach. wir sezten einfach den entsprechenden Schalter für ca. 1 Sekunde auf on und schalten ihn danach wieder aus. Zusätzlich schalten wir auch das input boolean feld wieder auf aus.
+
+Das Kippen der Jalousien erforder auch bei manueller Bedienung schon etwas Timing. Hier kommen in meinem Setup einige Problemchen zusammen. Meine Jalousien Controller reagiert mit abweichender Verzögerung auf den Zentralschalter, auch bei manueller Bedienung. Bei den Einzelschaltern ist dies (gefühlt) konstanter. Zusätlich entstehen durch WIFI, MQTT, HomeAssistant, NodeRed (auch stark schwankende) Verzögerungen. Im Gegensatz zur manuellen Bedienung habe ich hier auch kein Feedback ob die Jalousien sich bereits bewegen oder nicht. Um das Kippen dennoch möglichst zuverlässig zu implementieren bediene ich mich einiger Tricks.
+
+Bevor ich die Jalousien durch das einschalten eines Schalters in Bewegung versetzte, schalte ich diesen (ausgeschalteten) Schalter nochmal aus. Damit ist die Verbindung zwischen NodeRed, HomeAssistant MQTT-Server und
