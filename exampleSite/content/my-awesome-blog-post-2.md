@@ -37,7 +37,7 @@ Zuerst erstellen wir unsere Jalousien Objekt. Wir nutzen hier keine Home Assista
               data:
                 entity_id: input_boolean.close_shades
 
- Um den Status der User Interface Tasten im System verfügbar zu haben schreiben wir diesen in die 3 input_boolean variablen welche wir im nächsten Konfigurationsblock nun definieren:
+ Um den Status der User Interface Tasten im System verfügbar zu haben schreiben wir diesen in die 3 input_boolean variablen welche wir im nächsten Konfigurationsblock nun definieren.
 
     input_boolean:
       close_shades:
@@ -52,3 +52,5 @@ Zuerst erstellen wir unsere Jalousien Objekt. Wir nutzen hier keine Home Assista
         name: "Tilt Shades"
         initial: off
         icon: mdi:window-shutter-alert
+
+Somit haben wir die Konfiguration in Home Assistant selbst abgeschlossen. Die logik zur Steuerung der Jalousien selbst bild ich in NodeRed ab.
