@@ -12,7 +12,7 @@ Ich verwende einen Shelly 2.5 um meine Jalousien welche über einen propritären
 
 ![Shelly 2.5](https://shelly.cloud/wp-content/uploads/2019/01/shelly-25.png "Shelly 2.5 (source: shelly.cloud)")
 
-Ist der Shelly 2.5 erst mal verkabelt ist das nach oben und nach unten fahren schnell über die Shelly App oder den im Shelly integrierten Webserver auszuprobieren. Auch die erste Anbindung an Home Assistant über MQTT ist schnell erledigt und unterscheidet sich nicht von der Einbindung eines Shellys als Smarten Lichtschalter (siehe mein erster Shelly Blogpost). Um die Jalousien nun aber auch als solche in Home Assistant abzubilden müssen wir noch ein paar Dinge konfigurieren. 
+Ist der Shelly 2.5 erst mal verkabelt ist das nach oben und nach unten fahren schnell über die Shelly App oder den im Shelly integrierten Webserver auszuprobieren. Auch die erste Anbindung an Home Assistant über MQTT ist schnell erledigt und unterscheidet sich nicht von der Einbindung eines Shellys als Smarten Lichtschalter (siehe mein erster Shelly Blogpost). Um die Jalousien nun aber auch als solche in Home Assistant abzubilden müssen wir noch ein paar Dinge konfigurieren.
 
     light:
       - platform: mqtt
@@ -57,7 +57,7 @@ Zuerst erstellen wir unsere Jalousien Objekt. Wir nutzen hier keine Home Assista
               data:
                 entity_id: input_boolean.close_shades
 
- Um den Status der User Interface Tasten im System verfügbar zu haben schreiben wir diesen in die 3 input_boolean variablen welche wir im nächsten Konfigurationsblock nun definieren.
+Um den Status der User Interface Tasten im System verfügbar zu haben schreiben wir diesen in die 3 input_boolean variablen welche wir im nächsten Konfigurationsblock nun definieren.
 
     input_boolean:
       close_shades:
@@ -79,4 +79,4 @@ In NodeRed können wir an die drei input_booleans trigger hängen welche dann di
 
 Das Kippen der Jalousien erfordert auch bei manueller Bedienung schon etwas Timing. Hier kommen in meinem Setup einige Probleme zusammen. Meine Jalousien Controller reagiert mit abweichender Verzögerung auf den Zentralschalter, auch bei manueller Bedienung. Bei den Einzelschaltern ist diese (gefühlt) konstanter. Zusätlich entstehen durch WIFI, MQTT, HomeAssistant, NodeRed (auch stark schwankende) Verzögerungen. Im Gegensatz zur manuellen Bedienung habe ich hier auch kein Feedback ob die Jalousien sich bereits bewegen oder nicht. Um das Kippen dennoch möglichst zuverlässig zu implementieren bediene ich mich einiger Tricks.
 
-Bevor ich die Jalousien durch das Einschalten eines Schalters in Bewegung versetzte, schalte ich diesen (ausgeschalteten) Schalter nochmal aus. Damit ist die Verbindung zwischen NodeRed, HomeAssistant, MQTT-Server und Shelly schon aufgewärmt. 200ms später setzte ich den Schalter auf on. Bei meinen Tests hat sich herausgestellt, dass die Verzögerung beim vom Shelly gesendeten Events etwas konstanter ist, als die bei der Umsetzung von Schaltbefehlen die an den Shelly gesendet werden. Daher warte ich auf die Bestätigung des Shellies, dass dieser geschaltet hat, bevor ich den Timer für das Ausschalten des Shellies ( Loslassen des virtuellen Tasters) sende. Die Jalousien sind nun immer noch in Bewegung zur Kipp-Position. Es muss nu so lange (bei mir zusätzliche 300ms) gewartet werden wie es dauert bis die Jalousien diese Position (fast) erreicht haben. Stoppen lassen sich die Jaslousien in meinem Fall durch das kurze Betätigen des jeweils anderen Schalters. Da auch diese Reaktion etwas verzögert erfolgt muss sie etwas vor dem Erreichen der Endposition ausgelöst werden.
+Bevor ich die Jalousien durch das Einschalten eines Schalters in Bewegung versetzte, schalte ich diesen (ausgeschalteten) Schalter nochmal aus. Damit ist die Verbindung zwischen NodeRed, HomeAssistant, MQTT-Server und Shelly schon aufgewärmt. 200ms später setzte ich den Schalter auf on. Bei meinen Tests hat sich herausgestellt, dass die Verzögerung beim vom Shelly gesendeten Events etwas konstanter ist, als die bei der Umsetzung von Schaltbefehlen die an den Shelly gesendet werden. Daher warte ich auf die Bestätigung des Shellies, dass dieser geschaltet hat, bevor ich den Timer für das Ausschalten des Shellies (Loslassen des virtuellen Tasters) sende. Die Jalousien sind nun immer noch in Bewegung zur Kipp-Position. Es muss nu so lange (bei mir zusätzliche 300ms) gewartet werden wie es dauert bis die Jalousien diese Position (fast) erreicht haben. Stoppen lassen sich die Jaslousien in meinem Fall durch das kurze Betätigen des jeweils anderen Schalters. Da auch diese Reaktion etwas verzögert erfolgt muss sie etwas vor dem Erreichen der Endposition ausgelöst werden.
