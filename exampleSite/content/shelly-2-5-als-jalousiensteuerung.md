@@ -9,6 +9,7 @@ title = "Home Assistant"
 type = "post"
 
 +++
+* Location Tracking
 * HACS
 * Raspberry Pi 4
 * 
