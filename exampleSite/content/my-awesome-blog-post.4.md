@@ -22,4 +22,13 @@ type = "post"
 
 ## Hue Remote
 
-Die Hue Remote habe ich über die Custom Component via HACS installiert.
+Die Hue Remote habe ich über die Custom Component [https://github.com/robmarkcole/Hue-remotes-HASS](https://github.com/robmarkcole/Hue-remotes-HASS "Hue Remote HASS") via HACS installiert. In der Home Assistant Konfiguration sieht das einfach so aus.
+
+    remote:
+      - platform: hueremote
+
+Für die entsprechenden Aktionen die durch die 4 Knöpfe angewählt werden können kommt wieder NodeRed ins Spiel.
+
+![](/images/hue_remote_node_red_trigger_switch.PNG)
+
+Mit einem Switch können wir die Tasten anhand ihrer Payload unterscheiden und dann verschiedenen Aktionen auslösen. 
