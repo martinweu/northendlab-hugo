@@ -12,4 +12,5 @@ type = "post"
 * Location Tracking
 * HACS
 * Raspberry Pi 4
-* 
+* Spotify
+* Samsung TV (inkl WOL)
