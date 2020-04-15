@@ -8,9 +8,7 @@ title = "Philips Hue"
 type = "post"
 
 +++
-* Hue Lights
-* Hue Remote
-* Hue Sensors
+## Hue Bridge
 
 ## Hue Lampen
 
