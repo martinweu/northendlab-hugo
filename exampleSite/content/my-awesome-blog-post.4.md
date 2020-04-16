@@ -10,6 +10,8 @@ type = "post"
 +++
 ## Hue Bridge
 
+Die Hue Geräte werden über ZigBee angesprochen für die Verbindung mit dem Netzwerk sorgt die Hue Bridge. Die Hue Bridge wird einfach über RJ45 mit dem lokalen Netzwerk verbunden. Die Hue Handy Apps und Home Assistant können diese dann automatisch erkennen. 
+
 ## Hue Lampen
 
 ### Hue Ambience Color + White
@@ -29,4 +31,4 @@ Für die entsprechenden Aktionen die durch die 4 Knöpfe angewählt werden könn
 
 ![](/images/hue_remote_node_red_trigger_switch.PNG)
 
-Mit einem Switch können wir die Tasten anhand ihrer Payload unterscheiden und dann verschiedenen Aktionen auslösen. 
+Mit einem Switch können wir die Tasten anhand ihrer Payload unterscheiden und dann verschiedenen Aktionen auslösen.
