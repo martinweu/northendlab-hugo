@@ -17,8 +17,8 @@ Ist der Shelly 2.5 erst mal verkabelt ist das nach oben und nach unten fahren sc
     light:
       - platform: mqtt
         name: shadesdown
-        state_topic: "shellies/shellyswitch25-68F9FD/relay/0"
-        command_topic: "shellies/shellyswitch25-68F9FD/relay/0/command"
+        state_topic: "shellies/shellyswitch25-11F9FD/relay/0"
+        command_topic: "shellies/shellyswitch25-11F9FD/relay/0/command"
         qos: 2
         payload_on: "on"
         payload_off: "off"
@@ -26,8 +26,8 @@ Ist der Shelly 2.5 erst mal verkabelt ist das nach oben und nach unten fahren sc
         optimistic: false
       - platform: mqtt
         name: shadesup
-        state_topic: "shellies/shellyswitch25-68F9FD/relay/1"
-        command_topic: "shellies/shellyswitch25-68F9FD/relay/1/command"
+        state_topic: "shellies/shellyswitch25-11F9FD/relay/1"
+        command_topic: "shellies/shellyswitch25-11F9FD/relay/1/command"
         qos: 2
         payload_on: "on"
         payload_off: "off"
