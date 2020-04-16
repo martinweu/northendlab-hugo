@@ -10,15 +10,21 @@ type = "post"
 +++
 ## Hue Bridge
 
-Die Hue Geräte werden über ZigBee angesprochen für die Verbindung mit dem Netzwerk sorgt die Hue Bridge. Die Hue Bridge wird einfach über RJ45 mit dem lokalen Netzwerk verbunden. Die Hue Handy Apps und Home Assistant können diese dann automatisch erkennen. 
+Die Hue Geräte werden über ZigBee angesprochen für die Verbindung mit dem Netzwerk sorgt die Hue Bridge. Die Hue Bridge wird einfach über RJ45 mit dem lokalen Netzwerk verbunden. Die Hue Handy Apps und Home Assistant können diese dann automatisch erkennen. Die moderneren Hue Lampen können grundsätzlich auch über Bluetooth Low Energy für eine zentrale Steuerung eignet sich diese Variante aber nicht.
 
 ## Hue Lampen
 
-### Hue Ambience Color + White
+Alle Philips Hue Lampen sind dimmbar. Abgesehen von unterschiedlichen Fassungen und Designs unterscheiden sich die Lampen auch bei den möglichen Lichtfarben.
 
-### Hue Ambience White
+* White (ein Weißton, dimmbar)
+* White Ambiance (warmweiß bis kaltweiß, dimmbar)
+* White & Color Ambiance (Farbe oder warmweiß bis kaltweiß, dimmbar)
+
+Es gibt auch zahlreiche Lampen von anderen Herstellern welche mit dem Hue System kompatibel sind. Diese sind meißtens günstiger, kommen aber in der Qualität nicht immer ganz an die Philips Modelle heran. 
 
 ## Hue Motion Sensor
+
+Das Hue System besteht mittlerweile nicht mehr ausschließlich aus Lampen sondern auch aus anderen Geräten im Bereich Smarthome dazu gehören auch die Bewegungssensoren. Diese liefern zusätzlich zu der Bewegungsinformation auch Messwerte für Temperatur und Helligkeit. Home Assistant kann auf diese Sensoren auch ohne zusätzliche Erweiterungen einbinden.
 
 ## Hue Remote
 
