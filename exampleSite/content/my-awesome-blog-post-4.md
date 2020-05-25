@@ -29,8 +29,6 @@ Die nachfolgenden Konfigurationen hab ich im Block _light_ erstellt. Hier müsst
         payload_off: "off"
         retain: false
         optimistic: false
-     
-
 * Für den ersten Kanal des Shelly 2.5:
 
       - platform: mqtt
@@ -45,11 +43,11 @@ Die nachfolgenden Konfigurationen hab ich im Block _light_ erstellt. Hier müsst
 
 ## Schalter entkoppeln
 
-Die meisten meiner Shellie betreibe ich so das der Physikalische-Schalter seine normale Funktion behält und der Shelly nur eine zusätzliche Schaltmöglichkeit bietet. Dadurch ist die normale Schaltfunktion auch bei einem Netzwerkausfall gewährleistet. Einige wenige Schalter habe ich jedoch durch den Shelly virtuell vom Schaltkreis entkoppelt. Die physische Verkabelung des Shellies bleibt hier ident. Der Kontakt welcher durch Drücken des Schalters erzeugt wird, wird nun nicht mehr direkt vom angebundenen Shelly als Aufforderung zum Umschalten seines Ausgangs interpretiert, sondern lediglich als MQTT-Event an Home Assistant gesendet. Dort kann dann entschieden werden was mit dem Umlegen des Schalters ausgelöst werden soll. 
+Die meisten meiner Shellies betreibe ich so das der physikalische Schalter seine normale Funktion behält und der Shelly nur eine zusätzliche Schaltmöglichkeit bietet. Dadurch ist die normale Schaltfunktion auch bei einem Netzwerkausfall gewährleistet. Einige wenige Schalter habe ich jedoch durch den Shelly virtuell vom Schaltkreis entkoppelt. Die physische Verkabelung des Shellies bleibt hier ident. Der Kontakt welcher durch Drücken des Schalters erzeugt wird, wird nun nicht mehr direkt vom angebundenen Shelly als Aufforderung zum Umschalten seines Ausgangs interpretiert, sondern lediglich als MQTT-Event an Home Assistant gesendet. Dort kann dann entschieden werden was mit dem Umlegen des Schalters ausgelöst werden soll.
 
 ### Mehrere Geräte mit einen Schalter steuern
 
-Neben den Reaktionsmöglichkeiten die Home Assistant bietet kann das Event aber auch in NodeRed verarbeitet werden. Ich habe so zum Beispiel zusätzlich zum regulären Küchenlicht einen Wifi-RGB-LED Controller eingebunden. Das wäre ansich auch noch ohne die Entkopplung und der damit einhergehenden Funktionsuntüchtigkeit der Beleuchtung im Falle eines Ausfalls des Home Assistants oder WLANs möglich. In diesem Fall sein kann es aber sein, dass das reguläre Küchenlicht aus und der LED-Streifen an ist. Dann soll der Schalter beim ersten Drücken den LED-Streifen ausschalten und nicht das reguläre Küchenlicht einschalten. 
+Neben den Reaktionsmöglichkeiten die Home Assistant bietet kann das Event aber auch in NodeRed verarbeitet werden. Ich habe so zum Beispiel zusätzlich zum regulären Küchenlicht einen Wifi-RGB-LED Controller eingebunden. Das wäre ansich auch noch ohne die Entkopplung und der damit einhergehenden Funktionsuntüchtigkeit der Beleuchtung im Falle eines Ausfalls des Home Assistants oder WLANs möglich. In diesem Fall kann es aber sein, dass das reguläre Küchenlicht aus und der LED-Streifen an ist. Dann soll der Schalter beim ersten Drücken den LED-Streifen ausschalten und nicht das reguläre Küchenlicht einschalten.
 
 ### Smarte Lampen
 
