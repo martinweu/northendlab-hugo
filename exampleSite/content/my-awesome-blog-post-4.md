@@ -55,7 +55,7 @@ Ein anderes Beispiel wo es Sinn mach über die Entscheidung über das Schaltverh
 
 ## Web Interface
 
-Auf allen Shellies läuft auch ein eigenes Webinterface welches durch Benutzername und Passwort geschütz wird. Dies ermöglicht die einfache Konfiguration und auch das aktualisierter der Firmware. Einige meiner Shelly 1 kamen noch mit einer Firmware welche noch keine MQTT Unterstützung bot. Dies wurde aber durch die schon bereit liegene neue Softwareversion behoben. Das Aktualisieren der Firmware funktioniert mit einem Click und dauert in etwa 1-2 Minuten. In meinem Fall hat auch noch kein Shelly dabei seine Einstellungen verlohren.
+Auf allen Shellies läuft auch ein eigenes Webinterface welches durch Benutzername und Passwort geschütz wird. Dies ermöglicht die einfache Konfiguration und auch das aktualisierter der Firmware. Einige meiner Shelly 1 kamen noch mit einer Firmware welche noch keine MQTT Unterstützung bot. Dies wurde aber durch die schon bereit liegene neue Softwareversion behoben. Das Aktualisieren der Firmware funktioniert mit einem Click und dauert in etwa 1-2 Minuten. In meinem Fall hat auch noch kein Shelly dabei seine Einstellungen verloren.
 
 ## Fazit
 
