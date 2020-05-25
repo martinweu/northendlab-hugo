@@ -23,7 +23,7 @@ Gleich mal vorweg ich verwende Alexa (Amazon Echo Geräte) mit drei unterschiedl
 
 Die zweite Integration erfolgt über das Community Paket Alexa Media Player welches ich über HACS installiert habe. Damit habe ich die Möglichkeit Sprachausgaben an die jeweiligen Echo Geräte zu senden bzw. die für die einzelnen Geräte programmieren Wecker oder Timer auszulesen.
 
-## Virtual Hue Bridge - Node Red
+## Virtual Hue Bridge - NodeRed
 
 Die dritte Integration erfolgt über ein NodeRed-Paket welches eine HUE-Bridge simuliert. Alle Amazon Echo-Devices (auch die ohne SmartHome-Hub, also auch Dots) können über das lokale Netzwerk mit einer Philips-Hue Bridge kommunizieren. Soweit mir bekannt, ist das die einzige Integration die direkt imlokalen Netzwerk erfolgt. In Node-Red können dann virtuelle Philips-Hue Lampen mit beliebigen Namen erstellt werden. Diese müssen dann noch mit der Alexa App als SmartHome Geräte gesucht und gefunden werden. Danach kann mit "Alexa, schalte Haus verlassen ein" der Ablauf welcher an der virtuelle Philips-Hue Lampe mit dem Namen "Haus Verlassen" hängt gestartet werden.
 
@@ -35,7 +35,7 @@ Ein weiterer Schritt um die Interaktion noch etwas zu verbessern ist Alexa Routi
 
 ## Private Alexa Smart Home Skill
 
-Dies ist die elegantere Lösung einer Integration mit Home Assistant. Dies ist aber auch die aufwendigere und auch etwas kompliziertere Variante. Der Vorteil es lassen sich fast alle möglichen Gerätetypen speziell ansprechen. Jalousien kann man zum Beispiel durch das Komando "Alexa, Jalousien öffnen" bedienen. Diese Variante komm ohne NodeRed aus, die Konfiguration wird nur in Home Assistant vorgenommen. Dort werden dann Entity-IDs textuellen Namen zugeordnet welche dann durch Alexa erkannt werden können. 
+Dies ist die elegantere Lösung einer Integration mit Home Assistant. Dies ist aber auch die aufwendigere und auch etwas kompliziertere Variante. Der Vorteil es lassen sich fast alle möglichen Gerätetypen speziell ansprechen. Jalousien kann man zum Beispiel durch das Komando "Alexa, Jalousien öffnen" bedienen. Diese Variante komm ohne NodeRed aus, die Konfiguration wird nur in Home Assistant vorgenommen. Dort werden dann Entity-IDs textuellen Namen zugeordnet welche dann durch Alexa erkannt werden können.
 
 ### Eine Entity mehrere Namen
 
