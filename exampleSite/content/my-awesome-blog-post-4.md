@@ -16,7 +16,7 @@ Die Shellies werden bei mir über MQTT in das Smart Home eingebunden. Home Assis
 
 ### Konfiguration in Home Assistant
 
-Die nachfolgenden Konfigurationen hab ich im Block _light_ erstellt. Hier müsst ihr natürlich den Namen des Shelly anpassen. Die Shelly 2.5 heißen shellyswitch25-Seriennummer die Shelly 1 nur shelly1-Seriennummer. Für den zweiten Kanal des Shelly 2.5 einfach die beiden 0 in state_topic und command_topic durch zwei 1 ersetzen.
+Die nachfolgenden Konfigurationen hab ich im Block _light_ oder _switch_ erstellt. Hier müsst ihr natürlich den Namen des Shelly anpassen. Die Shelly 2.5 heißen shellyswitch25-Seriennummer die Shelly 1 nur shelly1-Seriennummer. Für den zweiten Kanal des Shelly 2.5 einfach die beiden 0 in state_topic und command_topic durch zwei 1 ersetzen.
 
 * Für den Shelly 1:
 
