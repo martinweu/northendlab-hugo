@@ -14,7 +14,7 @@ Ich verwende einen Shelly 2.5 um meine Jalousien welche über einen propritären
 
 Ist der Shelly 2.5 erst mal verkabelt ist das nach oben und nach unten fahren schnell über die Shelly App oder den im Shelly integrierten Webserver auszuprobieren. Auch die erste Anbindung an Home Assistant über MQTT ist schnell erledigt und unterscheidet sich nicht von der Einbindung eines Shellys als Smarten Lichtschalter (siehe mein erster Shelly Blogpost). Um die Jalousien nun aber auch als solche in Home Assistant abzubilden müssen wir noch ein paar Dinge konfigurieren.
 
-    light:
+    switch:
       - platform: mqtt
         name: shadesdown
         state_topic: "shellies/shellyswitch25-11F9FD/relay/0"
