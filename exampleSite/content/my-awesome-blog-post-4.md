@@ -47,7 +47,7 @@ Die meisten meiner Shellies betreibe ich so das der physikalische Schalter seine
 
 ### Mehrere Geräte mit einen Schalter steuern
 
-Neben den Reaktionsmöglichkeiten die Home Assistant bietet kann das Event aber auch in NodeRed verarbeitet werden. Ich habe so zum Beispiel zusätzlich zum regulären Küchenlicht einen Wifi-RGB-LED Controller eingebunden. Das wäre ansich auch noch ohne die Entkopplung und der damit einhergehenden Funktionsuntüchtigkeit der Beleuchtung im Falle eines Ausfalls des Home Assistants oder WLANs möglich. In diesem Fall kann es aber sein, dass das reguläre Küchenlicht aus und der LED-Streifen an ist. Dann soll der Schalter beim ersten Drücken den LED-Streifen ausschalten und nicht das reguläre Küchenlicht einschalten.
+Neben den Reaktionsmöglichkeiten die Home Assistant bietet kann das Event aber auch in NodeRed verarbeitet werden. Ich habe so zum Beispiel zusätzlich zum regulären Küchenlicht einen Wifi-RGB-LED Controller eingebunden. Das wäre ansich auch noch ohne die Entkopplung und der damit einhergehenden Funktionsuntüchtigkeit der Beleuchtung im Falle eines Ausfalls des Home Assistants oder WLANs möglich. In diesem Fall kann es aber sein, dass das reguläre Küchenlicht aus und der LED-Streifen an ist. Dann soll der Schalter beim ersten Drücken den LED-Streifen ausschalten und nicht das reguläre Küchenlicht einschalten. Somit kann der Shelly die Entscheidung über den Schaltvorgang nicht selbst treffen sondern muss diesen an den Home Assistant delegieren.
 
 ### Smarte Lampen
 
