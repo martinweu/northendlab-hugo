@@ -20,21 +20,12 @@ Alle Philips Hue Lampen sind dimmbar. Abgesehen von unterschiedlichen Fassungen 
 * White Ambiance (warmweiß bis kaltweiß, dimmbar)
 * White & Color Ambiance (Farbe oder warmweiß bis kaltweiß, dimmbar)
 
-Es gibt auch zahlreiche Lampen von anderen Herstellern welche mit dem Hue System kompatibel sind. Diese sind meißtens günstiger, kommen aber in der Qualität nicht immer ganz an die Philips Modelle heran. 
+Es gibt auch zahlreiche Lampen von anderen Herstellern welche mit dem Hue System kompatibel sind. Diese sind meistens günstiger, kommen aber in der Qualität nicht immer ganz an die Philips Modelle heran.
 
 ## Hue Motion Sensor
 
-Das Hue System besteht mittlerweile nicht mehr ausschließlich aus Lampen sondern auch aus anderen Geräten im Bereich Smarthome dazu gehören auch die Bewegungssensoren. Diese liefern zusätzlich zu der Bewegungsinformation auch Messwerte für Temperatur und Helligkeit. Home Assistant kann auf diese Sensoren auch ohne zusätzliche Erweiterungen einbinden.
+Das Hue System besteht mittlerweile nicht mehr ausschließlich aus Lampen sondern auch aus anderen Geräten im Bereich Smarthome dazu gehören auch die Bewegungssensoren. Diese liefern zusätzlich zu der Bewegungsinformation auch Messwerte für Temperatur und Helligkeit. Home Assistant kann auch diese Sensoren auch ohne zusätzliche Erweiterungen einbinden.
 
 ## Hue Remote
 
-Die Hue Remote habe ich über die Custom Component [https://github.com/robmarkcole/Hue-remotes-HASS](https://github.com/robmarkcole/Hue-remotes-HASS "Hue Remote HASS") via HACS installiert. In der Home Assistant Konfiguration sieht das einfach so aus.
-
-    remote:
-      - platform: hueremote
-
-Für die entsprechenden Aktionen die durch die 4 Knöpfe angewählt werden können kommt wieder NodeRed ins Spiel.
-
-![](/images/hue_remote_node_red_trigger_switch.PNG)
-
-Mit einem Switch können wir die Tasten anhand ihrer Payload unterscheiden und dann verschiedenen Aktionen auslösen.
+Auch die Hue Remotes können mittlerweile direkt ohne eigene Erweiterung in Home Assistant eingebunden werden. Es gibt insgesamt 8 Events die durch kurzes und langes Drücken auf den 4 Schaltern ausgelöst werden können.
