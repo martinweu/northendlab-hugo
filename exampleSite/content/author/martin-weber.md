@@ -1,6 +1,6 @@
 +++
 description = "Engineer, Software Developer, CTO"
-image = "/images/Martin_hell.jpg"
+image = "/images/Martin_hell_medium.jpg"
 title = "Martin Weber"
 
 +++

@@ -4,15 +4,7 @@ languageCode = "en-us"
 paginate = "5"
 summaryLength = "10"
 theme = "northendlab-hugo"
-title = "Northendlab | Blog Template"
-[[menu.footer]]
-URL = "contact"
-name = "Contact"
-weight = 1
-[[menu.footer]]
-URL = "tools"
-name = "tools"
-weight = 2
+title = "Martins Smarthome Blog"
 [[menu.main]]
 URL = "contact"
 name = "Contact"
@@ -27,15 +19,15 @@ home = ["HTML", "AMP", "RSS", "JSON"]
 author = "Themefisher"
 contact_form_action = "#"
 copyright = "&copy; 2020 [Gethugothemes](https://gethugothemes.com) All Rights Reserved"
-description = "This is meta description"
+description = "This is martin"
 google_analitycs_id = ""
 google_tag_manager = ""
 home = "Home"
-logo = "images/logo.svg"
+logo = "images/Martin_hell_small_circle.png"
 [params.banner]
 bgImage = "images/banner/banner-bg.svg"
 image = "images/banner/illustration.svg"
-title = "Hi, I'm Martin Weber. <br> I like home automation and write about this in my blog"
+title = "Hallo, ich bin Martin. <br> Ich habe Spaß an Home Automation und schreibe darüber in diesem Blog"
 [params.cta]
 description = "Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
 enable = true
@@ -65,14 +57,9 @@ preloader = ""
 [params.search]
 enable = true
 [[params.social]]
-icon = "ti-facebook"
-link = "#"
-[[params.social]]
-icon = "ti-twitter-alt"
-link = "#"
+icon = "ti-youtube"
+link = "https://www.youtube.com/channel/UCekTVmeJ6qkpjvqWt0rqpWg?view_as=subscriber"
 [[params.social]]
 icon = "ti-github"
-link = "#"
-[[params.social]]
-icon = "ti-linkedin"
-link = "#"
+link = "https://github.com/martinweu"
+
