@@ -5,14 +5,6 @@ paginate = "5"
 summaryLength = "10"
 theme = "northendlab-hugo"
 title = "Martins Smarthome Blog"
-[[menu.main]]
-URL = "contact"
-name = "Contact"
-weight = 1
-[[menu.main]]
-URL = "tools"
-name = "tools"
-weight = 2
 [outputs]
 home = ["HTML", "AMP", "RSS", "JSON"]
 [params]
