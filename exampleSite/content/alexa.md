@@ -3,7 +3,7 @@ author = "Martin Weber"
 categories = ["Hugo"]
 date = 2019-11-07T05:00:00Z
 description = "This is meta description"
-image = "/images/post/post-3.jpg"
+image = "/images/post/echo-dot-left.jpg"
 title = "Alexa"
 type = "post"
 
@@ -34,7 +34,7 @@ Um das System etwas tolleranter gegenüber Missverständnissen zu machen, kann e
 Ein weiterer Schritt um die Interaktion noch etwas zu verbessern ist Alexa Routinen zu verwenden. Diese müssen in der Alexa App konfiguriert werden und ermöglichen etwas mehr Freiheit bei der Gestaltung des Sprachbefehls. Der Sprachbefehl muss nicht mehr direkt das Schalten der einzelnen Geräte beinhalten. Zum Beispiel kann man eine Alexa Routine welche mit "Alexa, Guten Morgen" gestartet wird erstellen, welche dann die vorher in NodeRed erzeugte virtuelle "Morgenprogramm" Lampe einschaltet und somit das Radio einschaltet und die Jalousien nach oben fährt.
 
 ## Private Alexa Smart Home Skill
-
+![Echo Plus](/images/post/echo-plus-top.jpg "Echo Plus")
 Dies ist die elegantere Lösung einer Integration mit Home Assistant. Dies ist aber auch die aufwendigere und auch etwas kompliziertere Variante. Der Vorteil es lassen sich fast alle möglichen Gerätetypen speziell ansprechen. Jalousien kann man zum Beispiel durch das Komando "Alexa, Jalousien öffnen" bedienen. Diese Variante komm ohne NodeRed aus, die Konfiguration wird nur in Home Assistant vorgenommen. Dort werden dann Entity-IDs textuellen Namen zugeordnet welche dann durch Alexa erkannt werden können.
 
 ### Eine Entity mehrere Namen

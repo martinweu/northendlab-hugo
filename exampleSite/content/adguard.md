@@ -3,7 +3,7 @@ author = "Martin Weber"
 categories = ["Meta Data"]
 date = 2019-11-07T05:00:00Z
 description = "This is meta description"
-image = "/images/post/post-2.jpg"
+image = "/images/post/adguard.jpg"
 title = "AdGuard und Pi-hole"
 type = "post"
 
