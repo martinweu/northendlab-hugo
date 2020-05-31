@@ -14,6 +14,7 @@ Die Hue Geräte werden über ZigBee angesprochen für die Verbindung mit dem Net
 
 ## Hue Lampen
 ![Hue Lamp](/images/post/hue-cyan-closeup.jpg "Hue White and Color")
+
 Alle Philips Hue Lampen sind dimmbar. Abgesehen von unterschiedlichen Fassungen und Designs unterscheiden sich die Lampen auch bei den möglichen Lichtfarben.
 
 * White (ein Weißton, dimmbar)
@@ -24,6 +25,7 @@ Es gibt auch zahlreiche Lampen von anderen Herstellern welche mit dem Hue System
 
 ## Hue Motion Sensor
 ![Hue Sensor](/images/post/hue-sensor.jpg "Hue Sensor")
+
 Das Hue System besteht mittlerweile nicht mehr ausschließlich aus Lampen sondern auch aus anderen Geräten im Bereich Smarthome dazu gehören auch die Bewegungssensoren. Diese liefern zusätzlich zu der Bewegungsinformation auch Messwerte für Temperatur und Helligkeit. Home Assistant kann auch diese Sensoren auch ohne zusätzliche Erweiterungen einbinden.
 
 ## Hue Remote

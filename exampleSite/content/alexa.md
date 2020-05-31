@@ -35,6 +35,7 @@ Ein weiterer Schritt um die Interaktion noch etwas zu verbessern ist Alexa Routi
 
 ## Private Alexa Smart Home Skill
 ![Echo Plus](/images/post/echo-plus-top.jpg "Echo Plus")
+
 Dies ist die elegantere Lösung einer Integration mit Home Assistant. Dies ist aber auch die aufwendigere und auch etwas kompliziertere Variante. Der Vorteil es lassen sich fast alle möglichen Gerätetypen speziell ansprechen. Jalousien kann man zum Beispiel durch das Komando "Alexa, Jalousien öffnen" bedienen. Diese Variante komm ohne NodeRed aus, die Konfiguration wird nur in Home Assistant vorgenommen. Dort werden dann Entity-IDs textuellen Namen zugeordnet welche dann durch Alexa erkannt werden können.
 
 ### Eine Entity mehrere Namen
