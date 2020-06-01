@@ -14,3 +14,5 @@ type = "post"
 * Raspberry Pi 4
 * Spotify
 * Samsung TV (inkl WOL)
+* shelly plug and dishwasher
+* miele c@nnect

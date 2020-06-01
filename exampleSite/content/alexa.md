@@ -1,6 +1,6 @@
 +++
 author = "Martin Weber"
-categories = ["Hugo"]
+categories = ["Home Assistant"]
 date = 2019-11-07T05:00:00Z
 description = "This is meta description"
 image = "/images/post/echo-dot-left.jpg"
@@ -43,3 +43,9 @@ Dies ist die elegantere Lösung einer Integration mit Home Assistant. Dies ist a
 Der gleichen Enitiy mehrere Namen zuzuordnen ist ohne weiteres nicht möglich. Um einem Gerät aber doch einen zusätzlichen Namen zu erlaufen kann der Weg über Gruppen (Light-Group, Cover-Group, ...) gewählt werden. Einfach eine Gruppe mit einer einzigen Enitiy erstellen und der Entitiy-ID in Alexa den alternativen Namen zuordnen.
 
 Eine genaue Anleitung zur Einrichtung findet ihr [hier](https://www.home-assistant.io/integrations/alexa.smart_home/ "https://www.home-assistant.io/integrations/alexa.smart_home/").
+
+## Links
+* [Alexa und Spotify](https://www.spotify.com/de/amazonalexa/)
+* [Alexa auf Amazon](https://www.amazon.de/s?k=alexa&__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss_2)
+* [NodeRed Virtual Hue Bridge](https://flows.nodered.org/node/node-red-contrib-amazon-echo)
+* [Private Alexa Smart Home Skill](https://www.home-assistant.io/integrations/alexa.smart_home)
