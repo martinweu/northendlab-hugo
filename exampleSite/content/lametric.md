@@ -18,4 +18,4 @@ Die Lametric ist ein Pixel Display mit WLAN Anbindung. Die Lametic kann Wetterda
 ## Links
 * [Lametric](https://lametric.com/)
 * [Lametric for NodeRed](https://flows.nodered.org/node/node-red-contrib-lametric-notification)
-* [Lametric auf Amazon](https://www.amazon.de/LaMetric-LM-37X8-Time-WLAN-Uhr/dp/B017N5FP0E/ref=sr_1_3?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=lametric&qid=1591037274&sr=8-3)
+* [Lametric auf Amazon](https://www.amazon.de/LaMetric-LM-37X8-Time-WLAN-Uhr/dp/B017N5FP0E/ref=sr_1_3?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=lametric&qid=1591037274&sr=8-3&tag=napster220203-21)

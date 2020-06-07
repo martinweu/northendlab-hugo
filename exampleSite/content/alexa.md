@@ -46,6 +46,6 @@ Eine genaue Anleitung zur Einrichtung findet ihr [hier](https://www.home-assista
 
 ## Links
 * [Alexa und Spotify](https://www.spotify.com/de/amazonalexa/)
-* [Alexa auf Amazon](https://www.amazon.de/s?k=alexa&__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss_2)
+* [Alexa auf Amazon](https://www.amazon.de/s?k=alexa&__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss_2&tag=napster220203-21)
 * [NodeRed Virtual Hue Bridge](https://flows.nodered.org/node/node-red-contrib-amazon-echo)
 * [Private Alexa Smart Home Skill](https://www.home-assistant.io/integrations/alexa.smart_home)

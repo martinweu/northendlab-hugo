@@ -33,6 +33,6 @@ Wie sieht das ganze jetzt im WLAN aus? Natürlich könnte man für jedes Subnetz
 Obwohl mein TV-Gerät WLAN-fähig ist verwende ich für die Anbindung ans Netzwerk die TP-Link Powerline Adapter. Durch die Anbindung via Powerline habe ich nämlich die Möglichkeit den TV mittels Wake on Lan einzuschalten. Mehr dazu ([hier](../samsung-tv/)).
 
 ## Links
-* [Ubiquiti Edge Router X auf Amazon](https://www.amazon.de/ER-X-Ubiquiti-Network-Router/dp/B011N1IT2A/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=edgerouter+x&qid=1591035704&sr=8-1)
-* [TP Link Access Points auf Amazon](https://www.amazon.de/s?k=tplink+accesspoint&__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss)
-* [TP-Link Powerline auf Amazon](https://www.amazon.de/TP-Link-TL-PA4010-s-Ethernet-Port-energiesparend-kompatibel/dp/B00A0VBPLM/ref=sr_1_19?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=powerline+tplink&qid=1591038717&sr=8-19)
+* [Ubiquiti Edge Router X auf Amazon](https://www.amazon.de/ER-X-Ubiquiti-Network-Router/dp/B011N1IT2A/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=edgerouter+x&qid=1591035704&sr=8-1&tag=napster220203-21)
+* [TP Link Access Points auf Amazon](https://www.amazon.de/s?k=tplink+accesspoint&__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss&tag=napster220203-21)
+* [TP-Link Powerline auf Amazon](https://www.amazon.de/TP-Link-TL-PA4010-s-Ethernet-Port-energiesparend-kompatibel/dp/B00A0VBPLM/ref=sr_1_19?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=powerline+tplink&qid=1591038717&sr=8-19&tag=napster220203-21)

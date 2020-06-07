@@ -25,4 +25,4 @@ Wie man auf den Fotos erkennen kann ist mein TV-Gerät über einen Powerline Ada
 ## Links
 * [Home Assistant Community Store (HACS)](https://community.home-assistant.io/t/custom-component-hacs/121727)
 * [Samsung TV Home Assistant Community Plugin](https://github.com/jaruba/ha-samsungtv-tizen)
-* [TP-Link Powerline auf Amazon](https://www.amazon.de/TP-Link-TL-PA4010-s-Ethernet-Port-energiesparend-kompatibel/dp/B00A0VBPLM/ref=sr_1_19?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=powerline+tplink&qid=1591038717&sr=8-19)
+* [TP-Link Powerline auf Amazon](https://www.amazon.de/TP-Link-TL-PA4010-s-Ethernet-Port-energiesparend-kompatibel/dp/B00A0VBPLM/ref=sr_1_19?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=powerline+tplink&qid=1591038717&sr=8-19&tag=napster220203-21)

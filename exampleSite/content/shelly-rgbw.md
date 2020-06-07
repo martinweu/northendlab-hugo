@@ -60,4 +60,4 @@ original von ["Shelly RGBW2 thehookup"](https://github.com/thehookup/Shelly-RGBW
 
 ## Links
 * [Shelly](https://shelly.cloud)
-* [Shelly RGBW2 auf Amazon](https://www.amazon.de/Shelly-RGBW-2/dp/B07N49TXLQ/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=shelly+rgbw2&qid=1591034842&sr=8-1)
+* [Shelly RGBW2 auf Amazon](https://www.amazon.de/Shelly-RGBW-2/dp/B07N49TXLQ/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=shelly+rgbw2&qid=1591034842&sr=8-1&tag=napster220203-21)

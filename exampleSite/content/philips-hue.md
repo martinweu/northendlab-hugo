@@ -39,4 +39,4 @@ Auch die Hue Remotes können mittlerweile direkt ohne eigene Erweiterung in Home
 
 ## Links
 * [Philips Hue](https://www2.meethue.com/)
-* [Philips Hue auf Amazon](https://www.amazon.de/s?k=philips+hue&__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss_2)
+* [Philips Hue auf Amazon](https://www.amazon.de/s?k=philips+hue&__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss_2&tag=napster220203-21)

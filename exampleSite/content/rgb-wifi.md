@@ -23,4 +23,4 @@ Dem RGB-Modell kann hierbei auch eine statische IP-Adresse zugewiesen werden. Da
 ![RGBW Controller](/images/post/rgbw-controller.jpg "RGBW Controller")
 
 ## Links
-* [RGB Wifi Controller für MagicHome App auf Amazon](https://www.amazon.de/s?k=rgb+wifi+led+magic+home&__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss)
+* [RGB Wifi Controller für MagicHome App auf Amazon](https://www.amazon.de/s?k=rgb+wifi+led+magic+home&__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss&tag=napster220203-21)
